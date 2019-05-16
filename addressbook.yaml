@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: addressbookdeployment
 spec: 
-  replicas: 2
+  replicas: 3
   template: 
     metadata:
       labels: 
@@ -11,6 +11,6 @@ spec:
     spec: 
       containers: 
       - name: addressbook-conatiner
-        image: chandrapurnimabhatnagar/addressbook:7
+        image: jenkins
         ports:
         - containerPort: 8080
